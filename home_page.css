@@ -7,12 +7,15 @@ body {
     
 }
 
+.left-section,
+.right-section{
+    width: 100%
+}
+
 .left-section{
     border: 1px solid #EAEFF4;; 
     box-sizing: border-box;
-}
 
-.left-section {
     width: 268px;
     height: 1906px;
     background: var(--light-theme-gray-pure-white, #FFF);
@@ -56,6 +59,15 @@ hr{
     line-height: 140%; /* 16.8px */
 }
 
+.Dashboard li{
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    list-style-image: url('images/left_section/e_commerce_icon.png');
+
+}
 
 .Dashboard-items,
 .application-items,
@@ -216,16 +228,60 @@ hr{
 
 .basic-container{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.basic-text{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
+.basic-title{
+    color: var(--light-theme-gray-md-new-grey, #5A6A85);
+
+/* Normal */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+}
+
+.basic-caption{
+    color: var(--light-theme-gray-medium-blue-grey, #7C8FAC);
+
+/* Small */
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
 }
 
 .basic-number{
-    color: white;
-    background-color: #5D87FF;
-    width: 20px;
-    height: 20px;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    padding: 0px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 100px;
+    background: var(--light-theme-primary-primary, #5D87FF);
+    color: var(--neutral-white, #FFF);
+    text-align: center;
+
+/* Small */
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
 }
 
 .Premium{
@@ -292,21 +348,22 @@ nav {
 
 .nav-bar-left{
     display: flex;
-align-items: center;
-gap: 24px;
+    align-items: center;
+    gap: 24px;
 }
 
 .nav-bar-right{
     display: flex;
-justify-content: flex-end;
-align-items: center;
-gap: 24px;
-flex: 1 0 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+    margin-right: 30px;
 
 }
 
 .top-row{
-    display: grid;
+    display: flex;
     /* grid-gap: 28px; */
 }
 .mid-row {
@@ -379,9 +436,7 @@ box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(1
     display: flex;
 
 }
-.box-a .text-middle{
 
-}
 .box-a .text-middle-1{
     display: flex;
     flex-wrap: wrap;
@@ -599,10 +654,20 @@ box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(1
     border-radius: 3px;
     border: 1px solid var(--light-theme-gray-light-grey, #DFE5EF);
     background: var(--light-theme-gray-pure-white, #FFF);
+    color: var(--light-theme-gray-medium-blue-grey, #7C8FAC);
+
+/* Small Semibold */
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
 }
 
 /* THIS SECTION IS FOR BOX E */
 .box-e{
+    display: flex;
+    flex-direction: column;
 /* flex: 1; */
 width: 362px;
 height: 411px;
@@ -615,6 +680,93 @@ box-shadow: 0px 12px 24px -4px rgba(145, 158, 171, 0.12), 0px 0px 2px 0px rgba(1
 margin-right: 30px;
 }
 
+.box-e-text{
+    margin-left: 30px;
+    margin-top: 30px;
+    gap: 4px;
+}
+
+.box-e-text-title{
+    color: var(--light-theme-gray-dark-blue-grey, #2A3547);
+
+/* Heading/H5 */
+    font-family: Plus Jakarta Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 21.6px */
+}
+
+.box-e-text-header{
+    color: var(--light-theme-gray-medium-blue-grey, #7C8FAC);
+
+/* Normal */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+    margin-bottom: 30px;
+}
+.box-e-chart{
+    width: 205px;
+    height: 205px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
+
+.box-e-chart hr{
+    /* width: 362px; */
+    height: 1px;
+    background: #EAEFF4;
+}
+
+.box-e-chart-legend{
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 16px;
+    color: var(--light-theme-gray-medium-blue-grey, #7C8FAC);
+
+/* Small */
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 16.8px */
+}
+.box-e-chart-legend-2020,
+.box-e-chart-legend-2021,
+.box-e-chart-legend-2022{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-e-chart-legend-2020-dot,
+.box-e-chart-legend-2021-dot,
+.box-e-chart-legend-2022-dot{
+    width: 10px;
+height: 10px;
+border-radius: 100%;
+}
+
+.box-e-chart-legend-2020-dot{
+    background-color: var(--light-theme-primary-primary, #5D87FF);
+
+}
+
+.box-e-chart-legend-2021-dot{
+    background-color: var(--light-theme-secondary-secondary-color, #49BEFF);
+
+}
+
+.box-e-chart-legend-2022-dot{
+    background-color: var(--light-theme-action-success, #13DEB9);
+
+}
 /* THIS SECTION IS FOR BOX F */
 
 .box-f{
@@ -878,6 +1030,14 @@ margin-right: 30px;
     border-radius: 3px;
     border: 1px solid var(--light-theme-gray-light-grey, #DFE5EF);
     background: var(--light-theme-gray-pure-white, #FFF);
+    color: var(--light-theme-gray-medium-blue-grey, #7C8FAC);
+
+/* Small Semibold */
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 16.8px */
 
 }
 
@@ -1484,6 +1644,7 @@ background: var(--light-theme-action-light-light-success, #E6FFFA);
 
 /* THIS SECTION IS FOR BOX K */
 
+
 .box-k-titles{
     margin-top: 30px;
     margin-left: 30px;
@@ -1501,6 +1662,7 @@ background: var(--light-theme-action-light-light-success, #E6FFFA);
     align-items: flex-start;
     gap: 4px;
     flex: 1 0 0;
+    margin-bottom: 21px;
 }
 
 .box-k-content{
@@ -1509,4 +1671,117 @@ background: var(--light-theme-action-light-light-success, #E6FFFA);
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
+    margin-left: 30px
 }
+
+.box-k-content-1,
+.box-k-content-2,
+.box-k-content-3,
+.box-k-content-4,
+.box-k-content-5,
+.box-k-content-6,
+.box-k-content-7{
+
+    display: flex;
+    height: 40px;
+    width: 297px;
+    align-items: flex-start;
+    gap: 16px;
+    margin-right:35px;
+}
+
+
+.box-k-content-1-timestamp,
+.box-k-content-2-timestamp,
+.box-k-content-3-timestamp,
+.box-k-content-4-timestamp,
+.box-k-content-5-timestamp,
+.box-k-content-6-timestamp,
+.box-k-content-7-timestamp{
+    width: 40px;
+    flex-shrink: 0;
+    color: var(--light-theme-gray-dark-blue-grey, #2A3547);
+
+    /* Normal */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+
+}
+
+.box-k-content-1-dot,
+.box-k-content-2-dot,
+.box-k-content-3-dot,
+.box-k-content-4-dot,
+.box-k-content-5-dot,
+.box-k-content-6-dot,
+.box-k-content-7-dot{
+    width: 13px;
+height: 13px;
+
+
+}
+
+
+
+
+.box-k-content-1-text,
+.box-k-content-3-text,
+.box-k-content-5-text,
+.box-k-content-6-text{
+    width: 212px;
+    flex-shrink: 0;
+    color: var(--light-theme-gray-md-new-grey, #5A6A85);
+
+    /* Normal */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.28px;
+}
+
+
+.box-k-content-2-text,
+.box-k-content-4-text,
+.box-k-content-7-text{
+    display: inline-flex;
+    gap: 1px;
+    width: 212px;
+flex-shrink: 0;
+}
+.typo-part{
+    color: var(--light-theme-gray-dark-blue-grey, #2A3547);
+
+/* Normal Semibold */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: -0.14px;
+}
+.hash-tag-part{
+    color: var(--light-theme-primary-primary, #5D87FF);
+
+/* Normal Semibold */
+    font-family: Plus Jakarta Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: -0.14px;
+}
+@media only screen and (max-width: 768px) {
+    .left-section,
+    .right-section {
+        width: 100%; /* On smaller screens, make both sections take up 100% of the width */
+    }
+
+    /* Add more specific responsive styles for smaller screens if needed */
+}
+

@@ -99,7 +99,7 @@
                     <li>
                         <div class="basic-containter">
                             <div class="basic-text">
-                                <div class="basic">Basic</div>
+                                <div class="basic-title">Basic</div>
                                 <div class="basic-caption">
                                     8+ Basic components
                                 </div>
@@ -188,40 +188,45 @@
 
             </div>
 
-            <div class="box-b">
+            <div class = 'box-b-and-c'>
+                <div class="box-b">
 
-                <div class = "box-b-content">
-                    <div class="box-b-number">
-                        3267
+                    <div class = "box-b-content">
+                        <div class="box-b-number">
+                            3267
+                        </div>
+                        <div class="box-b-text">
+                            ProductGoals
+                        </div>
+    
                     </div>
-                    <div class="box-b-text">
-                        ProductGoals
+                    <div class="percentage-text" >
+                        65%
                     </div>
+                    <div class="w3-gray w3-round-xlarge">
+    
+                        <div class="w3-container w3-white w3-round-xlarge" style="width:65%; height: 6px; margin-bottom: 33px;"></div>
+                    </div>
+                </div>
+                <div class="box-c">
+                    <div class = 'box-c-text'>
+                        <div class="box-c-text-header">
+                            Earnings
+                        </div>
+                        <div class = "box-c-text-money">
+                            $678,298
+                        </div>
+                        <div class = "box-c-text-percentage">
+                            <img src = 'images/Box_C/Call - up.png'>+9%
+                        </div>
+    
+    
+                    </div>
+                </div>
 
-                </div>
-                <div class="percentage-text" >
-                    65%
-                </div>
-                <div class="w3-gray w3-round-xlarge">
-
-                    <div class="w3-container w3-white w3-round-xlarge" style="width:65%; height: 6px; margin-bottom: 33px;"></div>
-                </div>
             </div>
-            <div class="box-c">
-                <div class = 'box-c-text'>
-                    <div class="box-c-text-header">
-                        Earnings
-                    </div>
-                    <div class = "box-c-text-money">
-                        $678,298
-                    </div>
-                    <div class = "box-c-text-percentage">
-                        <img src = 'images/Box_C/Call - up.png'>+9%
-                    </div>
 
 
-                </div>
-            </div>
         </div>
 
 
@@ -254,7 +259,26 @@
                         Overview of Profit
                     </div>
                 </div>
-                <hr>
+                <div class = 'box-e-chart'>
+                    <canvas class ='doughnut_chart' height="205px" width="205px"></canvas>
+                    <hr>
+                    <div class = 'box-e-chart-legend'>
+                        <div class="box-e-chart-legend-2020">
+                            <div class = 'box-e-chart-legend-2020-dot'></div>2020
+                        </div>
+                        <div class="box-e-chart-legend-2021">
+                            <div class = 'box-e-chart-legend-2021-dot'></div>
+                            2021
+
+                        </div>
+                        <div class="box-e-chart-legend-2022">
+                            <div class = 'box-e-chart-legend-2022-dot'></div>
+                            2022
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -701,17 +725,122 @@
                     Daily activities
                 </div>
                 <div class = 'box-k-content'>
-                    <div class = 'box-k-timestamp'>
+
+                    <div class = 'box-k-content-1'>
+                        <div class = 'box-k-content-1-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-1-dot'>
+                            <img src ='images/Box_K/Blue_Elipse.png'>
+                        </div>
+                        <div class = 'box-k-content-1-text'>
+                            Payment received from John Doe of $385.90
+                        </div>
+                        
 
                     </div>
-                    <div class = 'box-k-captions'>
+                    <div class = 'box-k-content-2'>
+                        <div class = 'box-k-content-2-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-2-dot'>
+                            <img src ='images/Box_K/Cyan_Elipse.png'>
+
+                        </div>
+                        <div class = 'box-k-content-2-text'>
+                            <div class = 'typo-part'>
+                                New Sales Recorded
+
+                            </div>
+                            <div class = 'hash-tag-part'>
+                                #ML-3467
+                            </div>
+                        </div>
+                        
                         
                     </div>
-                </div>
-            </div>
-        </div>
+                    <div class = 'box-k-content-3'>
+                        <div class = 'box-k-content-3-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-3-dot'>
+                            <img src ='images/Box_K/Greeen_Elipse.png'>
+
+                        </div>
+                        <div class = 'box-k-content-3-text'>
+                            Payment was made of $64.95
+                            to Michael Anderson
+                        </div>
+                    </div>
+                    <div class = 'box-k-content-4'>
+                        <div class = 'box-k-content-4-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-4-dot'>
+                            <img src ='images/Box_K/Orange_Elipse.png'>
+
+                        </div>
+                        <div class = 'box-k-content-4-text'>
+                            <div class = 'typo-part'>
+                                New Sales Recorded
+
+                            </div>
+                            <div class = 'hash-tag-part'>
+                                #ML-3467
+                            </div>
+                        </div>
+
+                     </div>
+                     <div class = 'box-k-content-5'>
+                        <div class = 'box-k-content-5-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-5-dot'>
+                            <img src ='images/Box_K/Red_Elipse.png'>
+
+                        </div>
+                        <div class = 'box-k-content-5-text'>
+                            Project meeting
+                        </div>
+                    </div>
+                    <div class = 'box-k-content-6'>
+                        <div class = 'box-k-content-6-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-6-dot'>
+                            <img src ='images/Box_K/Blue_elipse_2.png'>
+
+                        </div>
+                        <div class = 'box-k-content-6-text'>
+                            Payment received from John
+                            Doe of $385.90                        </div>
+                    </div>
+                    <div class = 'box-k-content-7'>
+                        <div class = 'box-k-content-7-timestamp'>
+                            09:46
+                        </div>
+                        <div class = 'box-k-content-7-dot'>
+                            <img src ='images/Box_K/Blue_elipse_3.png'>
+
+                        </div>
+                        <div class = 'box-k-content-7-text'>
+                            <div class = 'typo-part'>
+                                New Sales Recorded
+
+                            </div>
+                            <div class = 'hash-tag-part'>
+                                #ML-3467
+                            </div>
+                        </div>
+                    </div>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src = 'doughnut_chart.js'></script>
+    <script src = 'line_chart_1.js'></script>
+    <script src = 'line_chart_2.js'></script>
+    <script src = 'bar_graph.js'></script>
+
 
 </body>
 </html>
