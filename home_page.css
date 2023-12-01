@@ -234,6 +234,57 @@ hr{
 
 }
 
+
+.application-items-card-list{
+    display: flex;
+    padding: 0px 0px 10px 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.application-items-card-list-item-1,
+.application-items-card-list-item-2,
+.application-items-card-list-item-3{
+    display: flex;
+    height: 40px;
+    padding: 16px 12px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.application-items-card-list-item-1::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #5A6A85;
+
+}
+.application-items-card-list-item-2::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #5D87FF;
+
+}
+
+.application-items-card-list :nth-child(2){
+    background-color: white;
+    color: #5D87FF;
+}
+
+.application-items-card-list-item-3::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #5A6A85;
+
+}
+
 /* THIS SECTION IS FOR USER TEXT */
 .user-text{
     display: flex;
