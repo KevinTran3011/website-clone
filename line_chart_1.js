@@ -1,18 +1,18 @@
 const ctx2 = document.querySelector('.line-chart-1').getContext('2d');
 
 const line_chart_1_data = {
-    labels: [ '', '16/04', '17/04', '18/04', '19/04', '20/04', '21/04', '22/04'],
+    labels: [ null, '16/04', '17/04', '18/04', '19/04', '20/04', '21/04', '22/04'],
     datasets: [
         {
             label: 'Spike Admin',
-            data: [200, 300, 2000, 1800, 2000, 3800, 2500, 4200, 2000],
+            data: [100, 300, 2000, 1800, 2000, 3800, 2500, 4200, 2000],
             pointRadius: 0, 
             borderColor: '#49BEFF',
             backgroundColor: '#49BEFF',
         },
         {
             label: 'Modernize ',
-            data: [ 200, 300, 1000, 800, 1100, 600, 2100, 600, 1900, 600, 2200  ],
+            data: [ 100, 300, 1000, 800, 1100, 600, 2100, 600, 1900, 600, 2200  ],
             pointRadius: 0, 
             borderColor: '#5D87FF',
             backgroundColor: '#5D87FF',
@@ -50,7 +50,6 @@ const line_chart_1_data = {
                     },
 
                     y:{
-                        min: -1,
                         ticks:{
                             color: ' #7C8FAC',
                             font: 'Plus Jakarta Sans',

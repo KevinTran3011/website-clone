@@ -1,8 +1,8 @@
 const ctx4 = document.querySelector('.line-chart-2').getContext('2d');
 
 const line_chart_2_data = {
-    labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025'],
-    data: [200, 500, 300, 1000, 990, 1500, 200 ],
+    labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025', '2024', '2025'],
+    data: [200, 500, 400, 1000, 990, 1400, 1100, 400, 200  ],
 
 }
 
@@ -60,12 +60,14 @@ const line_chart_2 = new Chart(ctx4,{
                     font: 'Plus Jakarta Sans',
                     callback: function (value, index, values) {
                         if (index === 0) {
-                            return '2019';
+                            return null;
                         } else if (index === 2) {
-                            return '2020';
+                            return '2019';
                         } else if (index === 4) {
-                            return '2021';
+                            return '2020';
                         } else if (index === 6) {
+                            return '2021';
+                        } else if (index === 8) {
                             return '2022';
                         } 
                     },
