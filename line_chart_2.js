@@ -6,17 +6,39 @@ const line_chart_2_data = {
 
 }
 
+
+
+function getGradient(ctx, chartArea) {
+    let gradient = ctx.createLinearGradient(
+      0,
+      chartArea.bottom,
+      0,
+      chartArea.top
+    );
+    gradient.addColorStop(1, "rgb(93, 135, 255)");
+    gradient.addColorStop(0, "rgb(255,255,255");
+    return gradient;
+  }
+
 const line_chart_2 = new Chart(ctx4,{
     type: 'line',
     data:{
         labels: line_chart_2_data.labels,
         datasets:[{
             data: line_chart_2_data.data,
-            backgroundColor: '#5D87FF',
             borderColor: '#5D87FF',
             tension: 0.4,
             pointRadius: 0,
             fill: true,
+            backgroundColor: function (context) {
+                const chart = context.chart;
+                const { ctx, chartArea } = chart;
+
+            // This case happens on initial chart load
+            if (!chartArea) return;
+            return getGradient(ctx, chartArea);
+},
+            
 
 
         }]

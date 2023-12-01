@@ -33,11 +33,7 @@ const line_chart_1_data = {
                     },
                 },
                 scales:{
-                    yAxes: [{
-                        gridLines : {
-                            display : false
-                        }
-                    }],
+
 
                     x:{
                         grid:{
@@ -54,6 +50,7 @@ const line_chart_1_data = {
                     },
 
                     y:{
+                        min: -1,
                         ticks:{
                             color: ' #7C8FAC',
                             font: 'Plus Jakarta Sans',
