@@ -35,7 +35,7 @@ const doughnut_Chart = new Chart(ctx, {
         }],
     },
     options: {
-        rotation: Math.PI /3,
+        rotation: Math.PI/3,
         borderRadius: 2,
         maintainAspectRatio: false,
         plugins: {
