@@ -15,7 +15,7 @@ function getGradient(ctx, chartArea) {
       0,
       chartArea.top
     );
-    gradient.addColorStop(1, "rgb(93, 135, 255)");
+    gradient.addColorStop(0.35, "rgb(237, 234, 255)");
     gradient.addColorStop(0, "rgb(255,255,255");
     return gradient;
   }
