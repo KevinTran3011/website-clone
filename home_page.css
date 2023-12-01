@@ -297,20 +297,9 @@ hr{
     color: #FFFFFF;
 }
 
-.user-type ul{
-    list-style-image: url('images/left_section/Dot.png');
-
-}
 
 
 
-.card-type ul{
-    height: 40px;
-    padding: 16px 12px;
-    align-items: center;
-    gap: 16px;
-    align-self: stretch;
-} 
 
 .Others-items{
     display: flex;
@@ -322,18 +311,36 @@ hr{
     color: #5A6A85;
 
 }
-.Others-items ul{
-    list-style-image: url('images/left_section/e_commerce_icon.png');
 
-
-
+.Other-items-text{
+    display: flex;
+    padding-top: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
 }
 
-.avatar-container {
-    display: inline-flex;
-    flex-direction: row;
-    position: relative;
+.avatar-container,
+.basic-container,
+.outline-container {
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 } 
+
+.avatar-container::before{
+    content: url('images/left_section/e_commerce_icon.png');
+}
+
+.basic-container::before{
+    content: url('images/left_section/e_commerce_icon.png');
+}
+
+.outline-container::before{
+    content: url('images/left_section/e_commerce_icon.png');
+}
 
 .avatar{
     margin-right: 26px
