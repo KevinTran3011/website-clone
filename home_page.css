@@ -947,7 +947,6 @@ nav {
   height: 222px;
   width: 100%;
   flex-shrink: 0;
-  border: 1px solid red;
   align-items: center;
   justify-content: center;
   align-self: center;
