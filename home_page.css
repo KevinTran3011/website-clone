@@ -495,13 +495,14 @@ hr {
   gap: 30px;
 }
 
-nav {
+.nav-bar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 24px;
   flex: 1 0 0;
   border-color: #5a6a85;
+  margin-top: 30px;
 }
 
 .nav-bar-item {
